@@ -43,7 +43,7 @@
 #define X_DIAG_PIN                         P1_29  // X-STOP
 #define Y_DIAG_PIN                         P1_28  // Y-STOP
 #define Z_DIAG_PIN                         P1_27  // Z-STOP
-#define E0_DIAG_PIN                        P1_26  // E0DET
+//#define E0_DIAG_PIN                        P1_26  // E0DET
 #define E1_DIAG_PIN                        P1_25  // E1DET
 
 //
@@ -52,9 +52,9 @@
 #ifdef X_STALL_SENSITIVITY
   #define X_STOP_PIN                  X_DIAG_PIN
   #if X_HOME_DIR < 0
-    #define X_MAX_PIN                      P1_26  // E0DET
+   // #define X_MAX_PIN                      P1_26  // E0DET
   #else
-    #define X_MIN_PIN                      P1_26  // E0DET
+   // #define X_MIN_PIN                      P1_26  // E0DET
   #endif
 #else
   #define X_STOP_PIN                       P1_29  // X-STOP
